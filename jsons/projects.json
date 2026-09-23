@@ -1,21 +1,23 @@
 [
   {
-    "title": "FoodShareBD",
+    "title": "FoodShareBD — Food Sharing & Delivery Platform",
     "icon": "🍲",
     "iconClass": "bg-slate-200 dark:bg-slate-800 text-sm",
     "badge": "University Project",
     "badgeClass": "bg-emerald-100 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-400",
-    "description": "Built backend APIs for a food-sharing and delivery platform. Implemented OTP verification, area-based OTP functionality, rider live tracking, and order live tracking.",
+    "description": "Developed a full-stack food-sharing and delivery platform featuring OTP & area-based verification, real-time rider/order tracking, automatic delivery-method switching, and push notifications.
+",
     "tech": ["Django", "REST API", "PostgreSQL", "Redis", "Celery"],
     "github": "https://github.com/RimonTimon"
   },
+
   {
     "title": "Online Bus Ticket Booking System",
     "icon": "🚌",
     "iconClass": "bg-blue-100 dark:bg-blue-950/60 border border-blue-200 dark:border-blue-800/40 text-blue-600 dark:text-blue-400 text-xs",
     "badge": "Completed",
     "badgeClass": "bg-emerald-100 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-400",
-    "description": "Built a bus ticket booking platform inspired by Shohoz. Developed booking APIs, backend business logic, and background processing using Celery and Redis.",
+    "description": "Developed a full-stack bus ticket booking platform with booking & seat-management APIs, backend business logic, and asynchronous background processing using Celery and Redis.",
     "tech": ["Django", "FastAPI", "PostgreSQL", "Redis", "Celery"],
     "github": "https://github.com/RimonTimon"
   },
@@ -25,7 +27,7 @@
     "iconClass": "bg-amber-100 dark:bg-amber-950/60 border border-amber-200 dark:border-amber-800/40 text-amber-600 dark:text-amber-400 text-xs",
     "badge": "Ongoing",
     "badgeClass": "bg-amber-100 dark:bg-amber-950/60 text-amber-700 dark:text-amber-400",
-    "description": "Developing a multi-task AI desktop assistant focused on 3D generation, image customization, automation, and advanced task execution.",
+    "description": "Developing a multi-task AI desktop assistant for AI-powered image customization, 3D generation, desktop automation, and asynchronous task execution.",
     "tech": ["Python", "Celery", "Redis"],
     "github": "https://github.com/RimonTimon"
   }
