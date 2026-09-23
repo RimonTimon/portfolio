@@ -134,12 +134,38 @@
         </div>
       </section>
 
+      <!-- Tech Stack Section -->
+      <section class="pb-12">
+        <h2 class="text-xs font-bold text-slate-500 dark:text-slate-400 tracking-widest uppercase mb-4">
+          <span class="text-amber-500">//</span> TECH STACK
+        </h2>
+
+        <p class="mb-5 text-slate-600 dark:text-slate-400 text-sm">
+          Technologies and frameworks I specialize in:
+        </p>
+
+        <div id="skills-list" class="flex flex-wrap gap-2 text-xs font-medium"></div>
+      </section>
+
       <!-- Work Experience Section -->
       <section class="pb-12">
         <h2 class="text-xs font-bold text-slate-500 dark:text-slate-400 tracking-widest uppercase mb-4">
           <span class="text-amber-500">//</span> EXPERIENCE
         </h2>
         <div id="experience-list" class="space-y-4"></div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="pb-12">
+        <h2 class="text-xs font-bold text-slate-500 dark:text-slate-400 tracking-widest uppercase mb-4">
+          <span class="text-amber-500">//</span> PROJECTS
+        </h2>
+
+        <p class="mb-5 text-slate-600 dark:text-slate-400 text-sm">
+          These are my personal and academic projects:
+        </p>
+
+        <div id="projects-list" class="space-y-4"></div>
       </section>
 
       <!-- Education Section -->
@@ -167,40 +193,14 @@
         </div>
       </section>
 
-      <!-- Tech Stack Section -->
+      <!-- Connect Section -->
       <section class="pb-12">
         <h2 class="text-xs font-bold text-slate-500 dark:text-slate-400 tracking-widest uppercase mb-4">
-          <span class="text-amber-500">//</span> TECH STACK
+          <span class="text-amber-500">//</span> CONNECT
         </h2>
 
         <p class="mb-5 text-slate-600 dark:text-slate-400 text-sm">
-          Technologies and frameworks I specialize in:
-        </p>
-
-        <div id="skills-list" class="flex flex-wrap gap-2 text-xs font-medium"></div>
-      </section>
-
-      <!-- Projects Section -->
-      <section class="pb-12">
-        <h2 class="text-xs font-bold text-slate-500 dark:text-slate-400 tracking-widest uppercase mb-4">
-          <span class="text-amber-500">//</span> PROJECTS
-        </h2>
-
-        <p class="mb-5 text-slate-600 dark:text-slate-400 text-sm">
-          These are my personal and academic projects:
-        </p>
-
-        <div id="projects-list" class="space-y-4"></div>
-      </section>
-
-      <!-- Find me on Section -->
-      <section class="pb-12">
-        <h2 class="text-xs font-bold text-slate-500 dark:text-slate-400 tracking-widest uppercase mb-4">
-          <span class="text-amber-500">//</span> FIND ME ON
-        </h2>
-
-        <p class="mb-5 text-slate-600 dark:text-slate-400 text-sm">
-          You can find me on the following platforms:
+          Connect with me on social platforms:
         </p>
 
         <div id="socials-list" class="flex flex-wrap gap-2.5 text-sm"></div>
@@ -232,7 +232,7 @@
 
     <!-- Footer -->
     <footer class="pt-8 pb-4 text-center text-xs text-slate-500 dark:text-slate-500 space-y-2">
-      <p>© 2026 </span> MD. Rimon Islam</p>
+      <p>© 2026 MD. Rimon Islam</p>
 
       <p>
         <a href="https://github.com/RimonTimon" target="_blank" rel="noopener" class="underline underline-offset-4 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white inline-flex items-center gap-1">
@@ -294,16 +294,14 @@
           </div>
         `).join('');
 
-const skillsRes = await fetch('./jsons/skills.json');
-
-const skills = await skillsRes.json();
-
-document.getElementById('skills-list').innerHTML = skills.map(skill => `
-  <span class="bg-brand-cardLight dark:bg-brand-cardDark border border-slate-300 dark:border-brand-borderDark text-slate-800 dark:text-slate-200 px-3 py-1.5 rounded-lg flex items-center gap-1.5">
-    ${skill}
-  </span>
-`).join('');
-
+        // Load Skills
+        const skillsRes = await fetch('./jsons/skills.json');
+        const skills = await skillsRes.json();
+        document.getElementById('skills-list').innerHTML = skills.map(skill => `
+          <span class="bg-brand-cardLight dark:bg-brand-cardDark border border-slate-300 dark:border-brand-borderDark text-slate-800 dark:text-slate-200 px-3 py-1.5 rounded-lg flex items-center gap-1.5">
+            ${skill}
+          </span>
+        `).join('');
 
         // Load Projects
         const projRes = await fetch('./jsons/projects.json');
@@ -344,7 +342,7 @@ document.getElementById('skills-list').innerHTML = skills.map(skill => `
           `;
         }).join('');
 
-        // Load Find Me On (Socials)
+        // Load Connect (Socials)
         const socRes = await fetch('./jsons/socials.json');
         const socials = await socRes.json();
         document.getElementById('socials-list').innerHTML = socials.map(item => `
