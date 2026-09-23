@@ -5,12 +5,10 @@
     "iconClass": "bg-slate-200 dark:bg-slate-800 text-sm",
     "badge": "University Project",
     "badgeClass": "bg-emerald-100 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-400",
-    "description": "Developed a full-stack food-sharing and delivery platform featuring OTP & area-based verification, real-time rider/order tracking, automatic delivery-method switching, and push notifications.
-",
+    "description": "Developed a full-stack food-sharing and delivery platform featuring OTP & area-based verification, real-time rider/order tracking, automatic delivery-method switching, and push notifications.",
     "tech": ["Django", "REST API", "PostgreSQL", "Redis", "Celery"],
     "github": "https://github.com/RimonTimon"
   },
-
   {
     "title": "Online Bus Ticket Booking System",
     "icon": "🚌",
