@@ -1,8 +1,0 @@
-[
-  {
-    "role": "Backend Developer",
-    "period": "Aug, 2026 — Present",
-    "company": "Chakri.ai",
-    "description": "Developed backend services and AI-powered recruitment agents (Interview, CV Processing, Job Matching, Job Posting, and Auto Apply CV Agents). Developed REST APIs and asynchronous workflows using Django, FastAPI, Celery, and Redis. Worked with PostgreSQL, Docker, and Git for backend development and deployment."
-  }
-]
